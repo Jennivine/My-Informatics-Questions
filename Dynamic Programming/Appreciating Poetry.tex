@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage[bottom=0.9in,top=0.85in,left=1in,right=1in]{geometry}
+\usepackage{nopageno}
+
+\setlength\parindent{0pt}
+
+\title{\textbf{Appreciating Poetry} \\
+	\ \\
+	\large \textbf{Input File:} poem.in \\
+	\large \textbf{Output File:} poem.out \\
+	\ \\
+	\textbf{Time and Memory Limits:} 1 second, 1 GB}
+
+\date{\vspace{-10ex}}
+
+\begin{document}
+\maketitle
+	
+‘The appeal of Yeats’ poetry lies in the textual integrity and his masterful exploration of the human condi-” oops sorry, wrong script. \\
+
+As usual, about ten minutes into the period and you start zoning out from your English class’ simulating conversation, although some phrases occasionally echo through and often send you into deep moments of contemplation. One time, you remember being asked “How can we know the dancer from the dance?”, while at other times, you remember hearing absurd phrases such as “World-famous golden-thighed Pythagoras”, which left you slightly shocked and extremely confused. \\
+
+And at the end of today’s lesson, your teacher has informed you to finish the homework researching different rhyme schemes. Naturally, if you were anything like the other students, you would not even bother thinking about it. But of course, since you have a particular interest in showing off, you have decided to bring out your trusty laptop and to write a program to find out how many different rhyme schemes there are for poems of \emph{N} lines. \\
+
+From your thorough research, you have learnt that:
+\begin{itemize}
+	\item Poets use rhyme schemes to describe which lines of a poem rhyme. Each line is denoted by a letter of the alphabet, with the same letter given to two lines that rhyme. To say that a poem has the rhyming scheme ABABCDED indicates that the first and third lines rhyme, the second and fourth lines rhyme, and the sixth and eighth lines rhyme, but no others. 
+	
+	\item More precisely, the first line of the poem is given the letter A. If a subsequent line rhymes with an earlier line, it is given the same letter; otherwise, it is given the first unused letter. For this question, you may assume that we live in a world with an infinite supply of “letters”, not just the 26 letters of the alphabet. \\
+\end{itemize}
+
+Since you don't want to be at loss for answers when your classmates quizzes you tomorrow on your new-found knowledge, your task is to determine the number of different rhyme schemes possible for any given poem length, using at most \emph{K} different letters. \\
+
+\textbf{Input}
+\begin{itemize}
+	\item The input consists of two integers \emph{N} and \emph{K}, which is the length of the poetry and the maximum number of letters respectively.
+\end{itemize} 
+
+
+\textbf{Output}
+\begin{itemize}
+	\item Your program should output a single integer, outlining how many different ways can the poem of length \emph{N} be rhymed using at most \emph{K} letters. \\
+\end{itemize} 
+
+\begin{minipage} [b] {0.333\textwidth}
+\textbf{Sample Input 1} \\
+3 1\\
+
+\textbf{Sample Output 1} \\
+1 \\
+\end{minipage} %
+\begin{minipage} [b] {0.333\textwidth}
+\textbf{Sample Input 2} \\
+4 2\\
+
+\textbf{Sample Output 2} \\
+8 \\
+\end{minipage} %
+\begin{minipage} [b] {0.333\textwidth}
+\textbf{Sample Input 3} \\
+5 5\\
+
+\textbf{Sample Output 3} \\
+52 \\
+\end{minipage} %
+
+\textbf{Explanation}
+\begin{itemize}
+	\item In the first sample input, you have \emph{N} = 3 lines and \emph{K} = 1 letter. There is only one way this poem can be rhymed, which is with a rhyme scheme of AAA. 
+	\item In the second sample input, \emph{N} = 4 lines and \emph{K} = 2 letters. There are 8 ways to rhyme a poem of 4 lines using at most 2 letters, of which some are AABB, ABAB, and AAAA.
+	\item In the third sample input, \emph{N} = 5 lines and \emph{K} = 5 letters. There are 52 ways to rhyme a poem of 5 lines using at most 5 letters.\\
+\end{itemize}
+
+
+
+\textbf{Subtasks \& Constraints} \\
+\ \\
+For all cases, 1 $\leq$ \emph{K} $\leq$ \emph{N} $\leq$ 1000. Additionally:
+\begin{itemize}
+	\item For Subtask 1 (10 marks), \emph{K} = 1.
+	\item For Subtask 2 (15 marks), \emph{K} = 2.
+	\item For Subtask 3 (15 marks), \emph{N} $\leq$ 10.
+	\item For Subtask 4 (30 marks), \emph{N} $\leq$ 100.
+	\item For Subtask 5 (30 marks), no further contraints apply.
+\end{itemize}
+	
+\end{document}
