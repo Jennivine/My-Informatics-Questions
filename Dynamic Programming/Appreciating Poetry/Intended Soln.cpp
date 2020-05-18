@@ -36,3 +36,4 @@ ull dp (ull N, ull K) {
 
 	return cache[N][K];
 }
+
